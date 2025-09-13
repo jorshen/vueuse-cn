@@ -60,9 +60,9 @@ const DefaultSideBar = [
 const FunctionsSideBar = getFunctionsSideBar()
 
 export default withPwa(defineConfig({
-  title: 'VueUse',
-  description: 'Collection of essential Vue Composition Utilities',
-  lang: 'en-US',
+  title: 'VueUse,vueuse中文文档,vueuse中文官网,vueuse使用教程',
+  description: 'vueuse的简介及使用教程',
+  lang: 'zh-CN',
   ignoreDeadLinks: true,
 
   markdown: {
@@ -77,6 +77,7 @@ export default withPwa(defineConfig({
 
   themeConfig: {
     logo: '/favicon.svg',
+    siteTitle: 'VueUse',
     editLink: {
       pattern: 'https://github.com/vueuse/vueuse/tree/main/packages/:path',
       text: 'Suggest changes to this page',

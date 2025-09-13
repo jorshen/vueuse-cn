@@ -5,7 +5,7 @@ sidebar: false
 hero:
   name: VueUse 中文文档
   text: Vue 组合式工具集
-  tagline: Vue 必备的组合式工具集
+  tagline: Vue 必备的组合式工具集 vueuse的简介及使用教程
   image:
     src: /favicon.svg
     alt: VueUse
@@ -25,7 +25,7 @@ hero:
 
 features:
   - title: 功能丰富
-    details: 提供 200 多个功能供您选择
+    details: 提供 200 多个功能供您选择 @vueuse/core
     icon: 🎛
   - title: 无缝迁移
     details: 适用于 Vue 3 和 2

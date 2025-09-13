@@ -101,14 +101,6 @@ export default withPwa(defineConfig({
 
     nav: [
       {
-        text: '关于本站',
-        link: '/guide/about',
-      },
-      {
-        text: 'vue源码学习',
-        link: '/vueer',
-      },
-      {
         text: '指南',
         items: [
           { text: '指南', items: Guide },
@@ -136,6 +128,11 @@ export default withPwa(defineConfig({
       {
         text: '在线演示',
         link: 'https://play.vueuse.org',
+      },
+      {
+        text: '8折阿里云',
+        link: 'https://www.aliyun.com/minisite/goods?userCode=je2jpw9a',
+        target: '_blank',
       },
       {
         text: currentVersion,
@@ -195,7 +192,7 @@ export default withPwa(defineConfig({
     ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.gstatic.com' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Code&display=swap' }],
-    ['script', { async: '1', src: 'https://www.googletagmanager.com/gtag/js?id=G-R9QEZMG8JJ'}],
+    ['script', { async: '1', src: 'https://www.googletagmanager.com/gtag/js?id=G-R9QEZMG8JJ' }],
     ['script', {}, `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}

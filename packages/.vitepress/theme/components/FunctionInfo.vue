@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useTimeAgo } from '@vueuse/core'
 import { functions } from '@vueuse/metadata'
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import exportSizes from '../../../export-size.json'
 
 const props = defineProps<{ fn: string }>()
@@ -15,6 +15,23 @@ function getFunctionLink(fn: string) {
   const info = functions.find(i => i.name === fn)
   return info?.docs?.replace(/https?:\/\/vueuse\.org\//g, '/')
 }
+onMounted(() => {
+  const tCloud = document.getElementsByClassName('t-cloud')
+  if (tCloud.length) {
+    return
+  }
+  const banner = document.createElement('div')
+  banner.className = 't-cloud'
+  banner.style.cssText = `
+  margin: 20px 0 0;
+  `
+  banner.innerHTML = `<a rel="nofollow" href='https://curl.qcloud.com/pOXwgcLZ' target="_blank"><img src="/rhino-design-180x460.png" alt="腾讯云"></a>`
+  // 获取页面类名为 VPHomeFeatures 下的类名为 container 的元素
+  const container = document.querySelector('.VPDocAsideOutline')
+  if (container) {
+    container.appendChild(banner)
+  }
+})
 </script>
 
 <template>
